@@ -22,7 +22,7 @@ def private_key_calculator(e ,phi):
     while(True):
         d=((phi*i)+1)/e
         if float(d).is_integer():
-            return (int(d),n)
+            return (int(d),phi)
         i+=1
 def encryption(p, e, n):
     power=pow(p,e[0])
